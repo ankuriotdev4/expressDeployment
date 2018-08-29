@@ -1,5 +1,6 @@
 var express = require('express');
 var app = new express();
+var port = process.env.port || process.env.PORT || 443;
 
 
 app.get('/currentBill', function(req, res){
@@ -37,10 +38,10 @@ app.get('/offers', function(req, res){
         }
     });
 });
-app.listen(8000, function(err, resp){
+app.listen(port, function(err, resp){
     if (err){
         console.log(err);
     } else {
-        console.log("Server listening on 8000");    
+        console.log("Server listening on "+port);    
     }
 });
