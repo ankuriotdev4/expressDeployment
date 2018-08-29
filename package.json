@@ -1,0 +1,14 @@
+{
+  "name": "alexaexpressapi",
+  "version": "1.0.0",
+  "description": "Sprint mock api's to be called by Alexa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ankur Agarwal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
