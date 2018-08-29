@@ -5,10 +5,10 @@ var port = process.env.port || process.env.PORT || 443;
 
 app.get('/currentBill', function(req, res){
     res.json({
-        number: "+919552543985",
+        number: "+91123345434",
         month : "August 2018",
-        smsCharges : "2",
-        callCharges : "50"
+        smsCharges : 2,
+        callCharges : 50
     });
 });
 
@@ -18,22 +18,22 @@ app.get('/', function(req, res){
 
 app.get('/lastBill', function(req, res){
     res.json({
-        number: "+919552543985",
+        number: "+91123345434",
         month : "July 2018",
-        smsCharges : "20",
-        callCharges : "100"
+        smsCharges : 20,
+        callCharges : 100
     });
 });
 
 app.get('/offers', function(req, res){
     res.json({
-        number: "+919552543985",
+        number: "+91123345434",
         dataPack  : {
-            "price"  : "10",
+            "price"  : 10,
             "benefits"  : "10 GB addon on your current plan"
         }, 
         voicePack : {
-            "price" : "20",
+            "price" : 20,
             "benefits" : "unlimited voice calls on Sprint numbers for 10 days"
         }
     });
