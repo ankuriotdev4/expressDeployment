@@ -11,6 +11,10 @@ app.get('/currentBill', function(req, res){
     });
 });
 
+app.get('/', function(req, res){
+    res.send("Expressample is deployed sucessfully!!");
+});
+
 app.get('/lastBill', function(req, res){
     res.json({
         number: "+919552543985",
